@@ -1,0 +1,50 @@
+.titulo{
+    border: 2px solid black;
+    box-shadow: 7px 13px 37px #000;
+    background-color: #d4d4d4;
+    margin-left: 650px;
+    width: 600px;
+    padding: 5px;
+
+}
+
+.tabpedido{
+    
+    margin: 150px;
+    width: 700px;
+}
+
+table{
+    border: 2px solid black;
+    box-shadow: 7px 13px 37px #000;
+    margin-left: 450px;
+    background-color:rgb(255, 255, 255);
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    padding: 5px;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px    #0f362d;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #faaf4c;
+}
+td:hover {
+    background-color: #d7f89a;
+    
+}
+.boton:hover{
+    background-color: #d7f89a;
+    
+}
+.boton{
+    background-color: #9b9b9b;
+    margin-left: 720px;
+    margin-top: 70px;
+    padding: 20px;
+}

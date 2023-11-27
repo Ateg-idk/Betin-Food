@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>Controlador</servlet-name>
+        <servlet-class>Controlador.Controlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AgregarPromocionServlet</servlet-name>
+        <servlet-class>Controlador.AgregarPromocionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorBroaster</servlet-name>
+        <servlet-class>Controlador.ControladorBroaster</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorBebida</servlet-name>
+        <servlet-class>Controlador.ControladorBebida</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controladorbebida</servlet-name>
+        <servlet-class>Controlador.Controladorbebida</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controlador</servlet-name>
+        <url-pattern>/Controlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarPromocionServlet</servlet-name>
+        <url-pattern>/AgregarPromocionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorBroaster</servlet-name>
+        <url-pattern>/ControladorBroaster</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorBebida</servlet-name>
+        <url-pattern>/ControladorBebida</url-pattern>
+    </servlet-mapping>
+</web-app>

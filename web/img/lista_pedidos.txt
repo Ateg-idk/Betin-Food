@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla.css">
+    <title>Lista pedidos</title>
+</head>
+
+    <div class="titulo">
+    <center><h2>LISTA DE PEDIDOS</h2></center>
+    </div>
+<body>
+   
+    <body>
+        
+        <div class="tabpedido">
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>NºPedido</th><th>Codigo</th><th>Promocion o Plato</th><th>Destino</th>
+                        <th>Cantidad</th> <th>Monto Total</th> <th>Estado</th>
+                    </tr>
+                </thead>
+    
+                <tr>
+                    <td>1</td><td>N001</td><td>Promo 2</td><td>Mz 11 lote 4 2da zona de bayovar</td>
+                    <td><center>1</center></td><td>s/25.00</td><td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>N002</td><td>Salchi broaster</td><td>AA.HH 10 de octubre comisaria</td><td><center>2</center></td>
+                    <td>s/33.90</td><td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>N003</td><td>Promo 4</td><td>Pdro 8 de huscar los arboles</td><td><center>1</center></td>
+                    <td>s/17.90</td><td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>N004</td><td>Hamburguesa Royal</td><td>Estacion los jardines</td><td><center>3</center></td>
+                    <td>s/10.50</td><td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>5</td><td>N005</td><td>Hamburguesa de doble carne</td><td>Metro hacienda</td><td><center>2</center></td>
+                    <td>s/21.00</td><td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>6</td><td>N006</td><td>Promo Solitario</td><td>Mz 10 lote 2 3era zona de bayovar</td><td><center>1</center></td>
+                    <td>s/16.50</td><td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>7</td><td>N007</td><td>Promo Mostrito</td><td>Miraflores Vandergen 299</td><td><center>2</center></td>
+                    <td>s/20.00</td><td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>8</td><td>N008</td><td>Promo 2 </td><td>Miraflores Vandergen 286</td><td><center>2</center></td>
+                    <td>s/45.50</td><td>En proceso</td>
+                </tr>
+            </table>
+            <div>
+                <input class="boton" type="button" value="Imprimir lista de pedidos " size="50">
+            </div>
+
+        </div>
+        
+    </body>
+    
+</body>
+</html>
