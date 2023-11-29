@@ -1,10 +1,8 @@
-<%-- 
-    Document   : Registrar
-    Created on : 6 oct. 2023, 23:23:56
-    Author     : samir
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="Modelo.Registrar"%>
+<%@page import="Controlador.ControladorRegistrar"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,92 +21,28 @@
             </svg>
         </a>
         <h1>Registrate</h1>
-        <form method="POST" action="/Registrar" id="formRegistrar">
+       <form action="ControladorRegistrar" method="post" enctype="multipart/form-data">
             <label>Nombres</label>
-            <input type="text" placeholder="Nombres" name="nombres" />
+            <input type="text" placeholder="Nombres" name="nombre" />
             <label>Apellidos</label>
-            <input type="text" placeholder="Apellidos" name="apellidos" />
+            <input type="text" placeholder="Apellidos" name="apellido" />
             <label>Direccion</label>
-            <input type="text" placeholder="ubicacion" name="ubi" />
+            <input type="text" placeholder="ubicacion" name="direccion" />
             <label>Correo</label>
-            <input type="text" placeholder="correo" name="email" />
+            <input type="text" placeholder="correo" name="correo" />
             <label>DNI</label>
             <input type="text" placeholder="DNI" name="dni" />
-            <label for="genero">Género:</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="Masculino">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Masculino
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="Femenino">
-              <label class="form-check-label" for="flexRadioDefault2">
-                Femenino
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="No especificado">
-              <label class="form-check-label" for="flexRadioDefault3">
-                No especificado
-              </label>
-            </div>
-        
-        
             <label>Contraseña</label>
-            <input type="password" placeholder="Contraseña" name="contrasenia" id="txtContrasena" />
-  
-            <label>Confirmar Contraseña</label>
-            <input type="password" placeholder="Confirmar Contraseña" id="txtContrasenaValidar" />
+            <input type="password" placeholder="Contraseña" name="password" />
+           
+            <button   class="btnRegistrar" name= "btn">Agregar</button>
             
-            <input type="button" value="Registrarse" id="btnRegistrar" />
-            <div th:if="${validacionError}" class="alert alert-danger" role="alert">
-                <th:block th:each="error : ${errores}" >
-                  <span th:text="'-'+ ${error}">
-                  </span>
-                  <br/><br/>
-                </th:block>
-              </div>
         </form>
 
         <p class="login">
             ¿Ya tienes una cuenta? <a href="login.jsp">Inicia sesión aquí</a>
         </p>
     </div>
-
-    <script>
-       const pass = document.getElementById("txtContrasena"),
-          icon = document.querySelector(".bi-bi-eye");
-      
-        //validar si las 2 contraseñas son iguales, si no son iguales impedir que el formulario se envie
-        document.getElementById("txtContrasenaValidar").addEventListener("keyup", function () {
-            var contrasena = document.getElementById("txtContrasena").value;
-            var contrasenaValidar = document.getElementById("txtContrasenaValidar").value;
-            if (contrasena != contrasenaValidar) {
-                document.getElementById("txtContrasenaValidar").style.borderColor = "red";
-            } else {
-                document.getElementById("txtContrasenaValidar").style.borderColor = "green";
-            }
-        });
-
-        function validarContrasena() {
-            var contrasena = document.getElementById("txtContrasena").value;
-            var contrasenaValidar = document.getElementById("txtContrasenaValidar").value;
-            if (contrasena != contrasenaValidar) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-
-        document.getElementById("btnRegistrar").addEventListener("click", function () {
-            if (validarContrasena()) {
-                document.getElementById("formRegistrar").submit();
-            } else {
-                alert("Las contraseñas no coinciden");
-            }
-        });
-    </script>
 </body>
 
 <style>
@@ -149,7 +83,7 @@
         margin-bottom: 10px;
     }
 
-    input[type="button"] {
+    .btnRegistrar {
         width: 100%;
         height: 35px;
         border: none;

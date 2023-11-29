@@ -1,3 +1,11 @@
+<%@page import="Modelo.Registrar"%>
+<%
+    HttpSession sesion = request.getSession();
+    
+    sesion.setAttribute("usuario", null);
+    
+
+%>
 <div class="contenedorGeneral">
     <div class="contenedor">
 

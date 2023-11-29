@@ -1,10 +1,6 @@
-<%-- 
-    Document   : index
-    Created on : 6 oct. 2023, 18:56:24
-    Author     : samir
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>

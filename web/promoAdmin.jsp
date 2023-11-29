@@ -152,7 +152,6 @@
                                 </thead>
                                 
                                 <% List<Promocion> promociones = controladorPromo.promoDAO.obtenerPromociones(); %>
-                                
                                 <% for (Promocion promocion : promociones) { %>
                                     <tr>
                                         <td><%= promocion.getCodigo() %></td>

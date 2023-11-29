@@ -20,6 +20,10 @@
         <servlet-name>Controladorbebida</servlet-name>
         <servlet-class>Controlador.Controladorbebida</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControladorRegistrar</servlet-name>
+        <servlet-class>Controlador.ControladorRegistrar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
         <url-pattern>/Controlador</url-pattern>
@@ -35,5 +39,9 @@
     <servlet-mapping>
         <servlet-name>ControladorBebida</servlet-name>
         <url-pattern>/ControladorBebida</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorRegistrar</servlet-name>
+        <url-pattern>/ControladorRegistrar</url-pattern>
     </servlet-mapping>
 </web-app>
