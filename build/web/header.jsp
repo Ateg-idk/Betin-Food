@@ -54,13 +54,18 @@
                            }
                         %>
                     
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="login.jsp">Iniciar Sesion</a>
-                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="carrito.jsp">Mis Compras</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="login.jsp">Salir</a>
-                        </div>
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <% if (usuario != null) { %>
+        <!-- Opciones para usuarios autenticados -->
+        <a class="dropdown-item" href="carrito.jsp">Mis Compras</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="login.jsp">Cerrar Sesión</a>
+    <% } else { %>
+        <!-- Opciones para usuarios no autenticados -->
+        <a class="dropdown-item" href="login.jsp">Iniciar Sesión</a>
+        <div class="dropdown-divider"></div>
+    <% } %>
+</div>
                     </li>     
 
               
